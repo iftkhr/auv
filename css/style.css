@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap");
+
+body {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  color: #006994;
+  background: linear-gradient(to right, #006994, #000, #006994);
+}
+header {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 20% 60% 20%;
+  position: fixed;
+  left: 0%;
+  z-index: 9999999;
+  background: linear-gradient(#ffffff, #f0f0f0);
+  box-shadow: #000 1px 1px 10px;
+  top: 0%;
+  max-height: 25%;
+}
+#logo {
+  width: 40%;
+  justify-self: left;
+  align-self: center;
+}
+#main {
+  background: #f0f0f0;
+  box-shadow: #000 1px 1px 10px;
+  padding: 10% 0;
+}
+#title {
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  color: #006994;
+  text-shadow: #000 0px 0px 0.5px;
+  font-weight: 500;
+  font-size: 200%;
+}
+#menu {
+  align-self: center;
+  justify-self: right;
+  cursor: pointer;
+}
+#uparrow {
+  position: fixed;
+  bottom: 0%;
+  right: 5%;
+  box-shadow: #000 1px 1px 10px;
+  cursor: pointer;
+}
+#nav {
+  position: fixed;
+  right: 0%;
+  top: 0%;
+  width: 15%;
+  height: 100vh;
+  /* max-width: 200px; */
+  z-index: 99999;
+  font-size: 150%;
+  background: #006994;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  box-shadow: #000 1px 1px 10px;
+}
+
+#nav a,
+footer a {
+  padding: 5%;
+  text-decoration: none;
+  color: #f0f0f0;
+  opacity: 0.8;
+  justify-self: left;
+  align-self: center;
+}
+#nav a:visited,
+#nav a:hover,
+footer a:hover,
+footer a:visited {
+  color: #f0f0f0;
+  opacity: 1;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+.hide {
+  visibility: hidden;
+}
+
+#sponsors {
+  margin: 0% auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(5, 5fr);
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+}
+#sponsors img {
+  width: 90%;
+}
+#sponsors .biglogo {
+  width: 60%;
+}
+#sponsors img:hover,
+#sponsors .text-logo:hover {
+  scale: 1.2;
+}
+#sponsors p {
+  font-size: 200%;
+  font-weight: 500;
+}
+hr {
+  width: 90%;
+  color: #006994;
+  opacity: 0.5;
+}
+#about {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  text-align: justify;
+  grid-gap: 2%;
+  font-size: 150%;
+  width: 90%;
+  margin: 5% auto 10% auto;
+}
+#about h1,
+#about h2,
+#about p {
+  grid-column: span 3;
+}
+#work {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  text-align: justify;
+  grid-gap: 2%;
+  font-size: 150%;
+  width: 90%;
+  margin: 5% auto 10% auto;
+}
+#work h1,
+#work h2,
+#work p {
+  grid-column: span 2;
+}
+
+#work .text {
+  font-weight: 500;
+}
+
+#achievements {
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+  text-align: justify;
+  grid-gap: 2%;
+  font-size: 150%;
+  width: 90%;
+  margin: 5% auto 10% auto;
+}
+#achievements h1,
+#achievements h2,
+#achievements p {
+  grid-column: span 4;
+}
+#achievements .card {
+  box-shadow: #006994 0px 0px 10px;
+  text-align: center;
+}
+
+#achievements .card:hover h3 {
+  opacity: 0.3;
+}
+
+#achievements img {
+  width: 50%;
+}
+#mentors {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  text-align: justify;
+  grid-gap: 2%;
+  font-size: 150%;
+  width: 90%;
+  margin: 5% auto 10% auto;
+}
+
+#mentors h1,
+#mentors p {
+  grid-column: span 3;
+}
+
+#feeds {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  text-align: justify;
+  grid-gap: 2%;
+  font-size: 150%;
+  width: 90%;
+  margin: 5% auto 10% auto;
+}
+#feeds h1 {
+  grid-column: span 3;
+}
+#blog {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: left;
+}
+#blog img {
+  width: 100%;
+}
+#blog a {
+  color: #006994;
+  opacity: 0.5;
+}
+
+#socialmedia {
+  box-shadow: #006994 0px 0px 10px;
+}
+#contact {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 2%;
+  justify-content: center;
+  align-content: center;
+  font-size: 150%;
+  width: 90%;
+  margin: 5% auto 0 auto;
+}
+#contact h1 {
+  grid-column: span 2;
+}
+#contactmedia {
+  text-align: center;
+}
+#contactmedia img {
+  width: 5%;
+}
+#address {
+  text-align: center;
+}
+iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  box-shadow: #006994 0px 0px 10px;
+}
+#socialmedialinks {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+}
+#socialmedialinks a {
+  width: 15%;
+  justify-self: center;
+  padding-top: 10%;
+}
+footer {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  align-items: center;
+  justify-items: center;
+  background: linear-gradient(#006994, #000);
+  box-shadow: #000 1px 1px 10px;
+}
+footer img {
+  width: 100%;
+}
+#footernav,
+#otherlinks {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 150%;
+}
+footer p {
+  grid-column: span 3;
+}
+
+@media all and (max-width: 1100px) {
+  #title {
+    font-size: 125%;
+  }
+  #sponsors p {
+    font-size: 100%;
+  }
+}
+@media all and (max-width: 800px) {
+  #main {
+    padding: 15% 0;
+  }
+  #nav {
+    width: 30%;
+  }
+  #about,
+  #work,
+  #achievements,
+  #mentors,
+  #feeds,
+  #contact {
+    grid-template-columns: repeat(2, 2fr);
+    grid-row-gap: 0;
+  }
+  #about h1,
+  #about h2,
+  #about p,
+  #work h1,
+  #work h2,
+  #work p,
+  #achievements h1,
+  #achievements h2,
+  #achievements p,
+  #mentors h1,
+  #mentors h2,
+  #mentors p,
+  #feeds h1,
+  #feeds h2,
+  #feeds p {
+    grid-column: span 2;
+  }
+  #footernav,
+  #otherlinks {
+    font-size: 100%;
+  }
+}
+@media all and (max-width: 500px) {
+  body {
+    font-size: 70%;
+  }
+  #logo {
+    width: 100%;
+  }
+  #main {
+    padding: 25% 0;
+  }
+  #about,
+  #work,
+  #achievements,
+  #mentors,
+  #feeds,
+  #contact {
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-row-gap: 0; */
+  }
+  #about h1,
+  #about h2,
+  #about p,
+  #work h1,
+  #work h2,
+  #work p,
+  #achievements h1,
+  #achievements h2,
+  #achievements p,
+  #mentors h1,
+  #mentors h2,
+  #mentors p,
+  #feeds h1,
+  #feeds h2,
+  #feeds p,
+  #contact h1 {
+    grid-column: span 1;
+  }
+  #title {
+    /* display: none; */
+  }
+  #nav {
+    width: 100%;
+    max-width: 100%;
+  }
+}
