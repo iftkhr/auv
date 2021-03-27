@@ -105,7 +105,7 @@
       </div>
       <hr />
       <div id="about">
-        <h1>Who are we?</h1>
+        <h1 class="heading"><span>Who are we?</span></h1>
         <p>
           We are an enthusiastic group of students from Aligarh Muslim
           University (India) united by a common thirst for the pursuit of
@@ -401,4 +401,11 @@
   </body>
   <script src="./js/carousel.js"></script>
   <script src="./js/menu.js"></script>
+  <script>
+    $(document).ready(function(){
+    $(".heading span").hover(function(){
+    $(".heading").toggleClass("active");
+      });
+    });
+  </script>
 </html>
