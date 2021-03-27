@@ -105,7 +105,7 @@
       </div>
       <hr />
       <div id="about">
-        <h1>Who are we?</h1>
+        <h1 class="heading"><span>Who are we?</span></h1>
         <p>
           We are an enthusiastic group of students from Aligarh Muslim
           University (India) united by a common thirst for the pursuit of
@@ -131,7 +131,7 @@
           We have skilled computer, mechanical, electronics and electrical
           engineers as a part of our team.
         </p>
-        <h2>Meet the team:</h2>
+        <h2 class="heading"><span>Meet the team:</span></h2>
         <div class="card">
           <img src="./img/coreteam.jpg" alt="" />
           <div class="text">
@@ -171,7 +171,7 @@
       </div>
 
       <div id="work">
-        <h1>What we do?</h1>
+        <h1 class="heading"><span>What we do?</span></h1>
         <p>
           We work primarily on autonomous underwater vehicles to participate in
           national and international competitions. We make our own vehicles from
@@ -184,7 +184,7 @@
           keeping in mind their benefit to the engineering and technology
           community as a whole.
         </p>
-        <h2>Have a look at our vehicles:</h2>
+        <h2 class="heading"><span>Have a look at our vehicles :</span></h2>
         <div class="card">
           <img src="./img/sea1.JPG" alt="" />
           <div class="text">
@@ -251,7 +251,7 @@
       </div>
 
       <div id="achievements">
-        <h1>Why do we do this?</h1>
+        <h1 class="heading"><span>Why do we do this?</span></h1>
         <p>
           We get a kick out of it! Period. And learn a hell lot from it too!
           <br />
@@ -262,7 +262,7 @@
           <br />
           Moreover, we do have some achievements under our belts!
         </p>
-        <h2>Our achievements:</h2>
+        <h2 class="heading"><span>Our achievements:</span></h2>
         <div class="card">
           <img src="./img/medal.svg" alt="" />
           <h3>SAVe 2019, Chennai</h3>
@@ -298,7 +298,7 @@
         </div>
       </div>
       <div id="mentors">
-        <h1>Mentored By</h1>
+        <h1 class="heading"><span>Mentored By</span></h1>
         <p>
           We are mentored by some awesome people!
         </p>
@@ -337,7 +337,7 @@
         </div>
       </div>
       <div id="feeds">
-        <h1>Read More</h1>
+        <h1 class="heading"><span>Read More</span></h1>
         <div id="blog">
           <p><img src="./img/jmiwebinar.jpg" alt=""> MTS AUV ZHCET Club in collaboration with IEEE JMI, organized a webinar on underwater
             robotics. <br><a href="">Read more...</a></p>
@@ -353,7 +353,7 @@
         </div>
       </div>
       <div id="contact">
-        <h1>Where to reach us?</h1>
+        <h1 class="heading"><span>Where to reach us?</span></h1>
         <div id="contactmedia">
           <img src="./img/phone.svg" alt=""><p>+91 93686 45090</p>   
           <a href="mailto:auvzhcet@zhcet.ac.in"><img src="./img/email.svg" alt=""><p>auvzhcet@zhcet.ac.in</p></a>
@@ -401,4 +401,11 @@
   </body>
   <script src="./js/carousel.js"></script>
   <script src="./js/menu.js"></script>
+  <script>
+    $(document).ready(function(){
+    $(".heading span").hover(function(){
+    $(".heading").toggleClass("active");
+      });
+    });
+  </script>
 </html>
